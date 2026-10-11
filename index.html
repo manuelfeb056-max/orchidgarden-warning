@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&#9888;&#65039; ADVERTENCIA &#9888;&#65039;</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  .alert-bar {
+    width: 100%;
+    max-width: 900px;
+    background: repeating-linear-gradient(45deg, #ff0000, #ff0000 30px, #000 30px, #000 60px);
+    padding: 14px;
+    border-radius: 8px 8px 0 0;
+  }
+  .alert-bar span {
+    background: #000;
+    color: #ff0000;
+    font-weight: 900;
+    font-size: 26px;
+    letter-spacing: 6px;
+    padding: 6px 24px;
+    border-radius: 4px;
+  }
+  .box {
+    width: 100%;
+    max-width: 900px;
+    border: 6px solid #ff0000;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 56px 32px;
+    background: #160000;
+    animation: pulse 1.6s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,0,0,0.0); }
+    50% { box-shadow: 0 0 60px 10px rgba(255,0,0,0.45); }
+  }
+  .icon { font-size: 110px; margin-bottom: 12px; }
+  h1 {
+    color: #ff0000;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    margin-bottom: 28px;
+    text-shadow: 0 0 24px rgba(255,0,0,0.6);
+  }
+  p {
+    font-size: 26px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+  p strong { color: #ff4d4d; }
+  .big { font-size: 32px; font-weight: 800; }
+  .foot {
+    margin-top: 32px;
+    font-size: 16px;
+    color: #999;
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 40px; letter-spacing: 4px; }
+    p { font-size: 20px; }
+    .big { font-size: 24px; }
+    .icon { font-size: 80px; }
+  }
+</style>
+</head>
+<body>
+  <div class="alert-bar"><span>&#9888; ALERTA &#9888;</span></div>
+  <div class="box">
+    <div class="icon">&#9888;&#65039;</div>
+    <h1>ADVERTENCIA</h1>
+    <p class="big">El due&ntilde;o de este negocio <strong>debe dinero y no ha pagado</strong>.</p>
+    <p>Si llegaste aqu&iacute; buscando sus servicios, pi&eacute;nsalo dos veces antes de hacer negocios con alguien que <strong>no cumple sus compromisos</strong>.</p>
+    <p class="foot">Esta p&aacute;gina permanecer&aacute; as&iacute; hasta que se salde la deuda.</p>
+  </div>
+</body>
+</html>
